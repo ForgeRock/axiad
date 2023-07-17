@@ -31,13 +31,13 @@ Possess strong token such as a smart card or hardware device with public key. Pl
 2. Create a new Authentication Tree as shown in Example section.
 3. Click the Certificate Collector Node and configure the Certificate Collection Method to Either.
 4. Click the Certificate Validation Node and configure below options
-   4.1. Enable Check Certificate Expiration option.
-   4.2. Enable Match Certificate to CRL option.
-   4.3. Enable Cache CRLs in Memory option.
-   4.4. Enable Update CA CRLs from CRLDistributionPoint option.
-   4.5. Add LDAP Server Where Certificates are Stored.
-   4.6. Configure LDAP Server Authentication Password.
-   4.7. Enable Use SSL/TLS for LDAP Access.
+   1. Enable Check Certificate Expiration option.
+   2. Enable Match Certificate to CRL option.
+   3. Enable Cache CRLs in Memory option.
+   4. Enable Update CA CRLs from CRLDistributionPoint option.
+   5. Add LDAP Server Where Certificates are Stored.
+   6. Configure LDAP Server Authentication Password.
+   7. Enable Use SSL/TLS for LDAP Access.
 5. Click Certificate User Extractor Node, and configure SubjectAltNameExt Value Type to Access User Profile to UPN.
 
 ### Example Flow
