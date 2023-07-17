@@ -11,7 +11,7 @@ Certificate-based authentication is one of the most secure, phishing-resistant f
 
 ### Installation
 
-1. Download the latest version of the Axiad certificate Based Node from [here](https://github.com/ForgeRock/axiad/tree/main/jar/certificate-node-1.0.1.jar).
+1. Download the latest version of the Axiad certificate Based Node from [here](https://github.com/ForgeRock/axiad/tree/main/jar/).
 2. Copy the .jar file into the ../web-container/webapps/openam/WEB-INF/lib directory where AM is deployed.
 3. Enable Secure https on the container.
 4. Enable com.sun.security.enableCRLDP option in your web application container. For example, if you are using Apache Tomcat™, you would add the following to the setenv.sh file (typically located in the /tomcat/bin/ directory):
