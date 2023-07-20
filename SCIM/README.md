@@ -30,32 +30,38 @@ If your Axiad environment is already configuered with required mappings in Axiad
 ### Axiad SCIM Connector Configuration
 1. Log into the ForgeRock Identity Management console.
 2. Click on `CONFIGURE` and select `CONNECTORS`. AxiadSCIMConnector will be avaiable to configure as shown
-
-
-   <img src="./images/Axiad_SCIM_Connector.png" width="1000" height="500" align="left"/>
-   
+  
+   ![Axiad SCIM Connector |10x10](./images/Axiad_SCIM_Connector.png)
 4. Click on the Axiad SCIM Connector
    1. Configure the `SCIM Endpoint` under `Base Connector Details` section as shown. If you don't have the endpoint please contact [Axiad Customer Success Representative](mailto:customer.success@axiad.com).
+  
    ![SCIM Endpoint](./images/SCIM_endpoint_config.png)
    2. Confgiure `Authentication token` under `Additional Options` section as shown. If you don't have the token please contact [Axiad Customer Success Representative](mailto:customer.success@axiad.com).
+  
    ![Authentication Token](./images/Authentication_token_config.png)
    3. Click on save.
 
 ### Axiad SCIM Connector mappings Configuration   
 5. Click on `CONFIGURE` and select `Mappings`. Axiad SCIM mappings will be available as shown below
+  
    ![Axiad SCIM Mappings](./images/Axiad_SCIM_Mappings.png)
 
 ### Users mappings Configuration 
 6. Click on `Edit` where SOURCE is `Managed/User` and verify the settings are correct
    1. Verify `Properties` tab has mappings as shown below
+  
       ![User_properties_tab](./images/users_mapping/User_properties_tab.png **=100x100**)
    2. Verify `Association Rules` under Association tab has config as shown
+  
       ![User_association_tab]](./images/users_mapping/User_association_tab.png)
       1. Under `Association Rules`, click on pencil icon to verify the `Correlation Query` config as shown
+  
          ![User_correlation_query]](./images/users_mapping/User_correlation_query.png)
    3. Verify `Behaviors` tab has policies as shown
+  
       ![User_behaviors_tab]](./images/users_mapping/User_behaviors_tab.png)
    4. Verify `Advanced` tab has policies as shown 
+  
       ![User_advanced_tab](./images/users_mapping/User_advanced_tab.png)  
        
 7. Under scheduling tab, you can `Add Reconciliation Schedule` as per your organization's requirement. 
