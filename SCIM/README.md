@@ -1,4 +1,5 @@
-![Axiad logo](images/axiad_logo.png)
+   <img src="images/axiad_logo.png" align="center">
+ 
 
 # Axiad
 
@@ -27,6 +28,7 @@ If your Axiad environment is already configured with required mappings in Axiad 
 3. Copy the content of `mapping-AxiadSCIMConnector.json` inside mappings array into `conf\sync.json` file.
 
 ## ForgeRock Configuration
+
 ### Axiad SCIM Connector Configuration
 1. Log into the ForgeRock Identity Management console.
 2. Click `CONFIGURE` on the menu bar and select `CONNECTORS`. AxiadSCIMConnector will be avaiable to configure as shown
@@ -44,26 +46,89 @@ If your Axiad environment is already configured with required mappings in Axiad 
    3. Click on save.
 
 ### Axiad SCIM Connector mappings Configuration   
-5. Click `CONFIGURE` on the menu bar and select `Mappings`. Axiad SCIM mappings will be available as shown below
+1. Click `CONFIGURE` on the menu bar and select `Mappings`. Axiad SCIM mappings will be available as shown below
   
    ![Axiad SCIM Mappings](./images/Axiad_SCIM_Mappings.png)
 
-### Users mappings Configuration 
-6. Click on `Edit` where SOURCE is `Managed/User` and verify the settings are correct
+#### Users mappings Configuration 
+
+1. Click on `Edit` where SOURCE is `Managed/User` and verify the settings are correct
    1. Verify `Properties` tab has mappings as shown
   
       ![User_properties_tab](./images/users_mapping/User_properties_tab.png)
    2. Verify `Association Rules` under Association tab has config as shown
   
-      ![User_association_tab]](./images/users_mapping/User_association_tab.png)
+      ![User_association_tab](./images/users_mapping/User_association_tab.png)
       1. Under `Association Rules`, click on pencil icon to verify the `Correlation Query` config as shown
   
-         ![User_correlation_query]](./images/users_mapping/User_correlation_query.png)
+         ![User_correlation_query](./images/users_mapping/User_correlation_query.png)
    3. Verify `Behaviors` tab has policies as shown
   
-      ![User_behaviors_tab]](./images/users_mapping/User_behaviors_tab.png)
-   4. Verify `Advanced` tab has additional mappings options as shown 
+      ![User_behaviors_tab](./images/users_mapping/User_behaviors_tab.png)
+   4. Verify `Advanced` tab has policies as shown 
   
       ![User_advanced_tab](./images/users_mapping/User_advanced_tab.png)  
        
-7. Under scheduling tab, you can `Add Reconciliation Schedule` as per your organization's requirement. 
+2. Under `Scheduling` tab, you can `Add Reconciliation Schedule` as per your organization's requirement.
+
+#### Groups mappings Configuration
+
+1. Click on `Edit` where SOURCE is `Managed/Role` and verify the settings are correct
+   1. Verify `Properties` tab has mappings as shown
+  
+      ![User_properties_tab](./images/groups_mapping/Group_properties_tab.png)
+   2. Verify `Association Rules` under Association tab has config as shown
+  
+      ![User_association_tab](./images/groups_mapping/Group_association_tab.png)
+      1. Under `Association Rules`, click on pencil icon to verify the `Correlation Query` config as shown
+  
+         ![User_correlation_query](./images/groups_mapping/Group_correlation_query.png)
+   3. Verify `Behaviors` tab has policies as shown
+  
+      ![User_behaviors_tab](./images/groups_mapping/Group_behaviors_tab.png)
+   4. Verify `Advanced` tab has policies as shown 
+  
+      ![User_advanced_tab](./images/groups_mapping/Group_advanced_tab.png)  
+       
+2. Under `Scheduling` tab, you can `Add Reconciliation Schedule` as per your organization's requirement.
+
+### Managed Objects Configuration
+
+#### Users
+1. Click `CONFIGURE` on the menu bar and select `MANAGED OBJECTS`.
+2. Click 'User' managed object
+
+##### Manager property
+
+1. Edit `manager` property 
+2. Under `Details`, click on `Show advanced options`
+3. Enable all the options( `Viewable`, `Searchable`, `User Editable`, `Nullable`, `Return by Default` and `Notify Self`).
+4. Edit `Relationship Configuration`, highlighted with red rectangle as shown
+
+    ![Manager_edit_relationship](./images/users_mapping/Manager_edit_relationship.png)
+
+   1. Enable `Notify` on `Edit Resource` screen as shown
+
+      ![Edit_resource](./images/users_mapping/Edit_resource.png)
+
+##### MemberOfOrgIDs property
+1. Edit `memberOfOrgIDs` property
+2. Under `Details`, click on `Show advanced options`
+3. Enable `User Editable`, `Return by Default` and `Virtual` options
+
+#### Roles
+1. Click `CONFIGURE` on the menu bar and select `MANAGED OBJECTS`.
+2. Click 'Role' managed object
+
+##### Members property
+
+1. Edit `members` property 
+2. Under `Details`, click on `Show advanced options`
+3. Enable `Viewable`, `User Editable`, `Return by Default` and `Notify Self` options.
+4. Edit `Relationship Configuration`, highlighted with red rectangle as shown
+
+    ![Member_edit_relationship](./images/groups_mapping/Member_edit_relationship.png)
+
+   1. Enable `Notify` on `Edit Resource` screen as shown
+
+      ![Edit_resource](./images/groups_mapping/Edit_resource.png)
