@@ -62,7 +62,7 @@ If your Axiad environment is already configured with required mappings in Axiad 
    3. Verify `Behaviors` tab has policies as shown
   
       ![User_behaviors_tab]](./images/users_mapping/User_behaviors_tab.png)
-   4. Verify `Advanced` tab has policies as shown 
+   4. Verify `Advanced` tab has additional mappings options as shown 
   
       ![User_advanced_tab](./images/users_mapping/User_advanced_tab.png)  
        
