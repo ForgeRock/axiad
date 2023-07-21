@@ -29,76 +29,90 @@ If your Axiad environment is already configured with required mappings in Axiad 
 
 ## ForgeRock Configuration
 
-### __Axiad SCIM Connector Configuration__
+### 1. Axiad SCIM Connector Configuration
+
 1. Log into the ForgeRock Identity Management console.
-2. Click `CONFIGURE` on the menu bar and select `CONNECTORS`. AxiadSCIMConnector will be avaiable to configure as shown
+2. Click `CONFIGURE` on the menu bar and select `CONNECTORS`. AxiadSCIMConnector will be avaiable as shown
   
    ![Axiad SCIM Connector |10x10](./images/Axiad_SCIM_Connector.png)
-4. Click on the Axiad SCIM Connector
-   1. Configure the `SCIM Endpoint` under `Base Connector Details` section as shown. If you don't have the SCIM endpoint please contact [Axiad Customer Success Representative](mailto:customer.success@axiad.com).
+
+3. Click on the `Axiad SCIM Connector`
+
+   3.1. Configure the `SCIM Endpoint` under `Base Connector Details` section as shown. If you don't have the SCIM endpoint please contact [Axiad Customer Success Representative](mailto:customer.success@axiad.com).
   
    ![SCIM Endpoint](./images/SCIM_endpoint_config.png)
 
-   2. Confgiure `Authentication token` under `Additional Options` section as shown. If you don't have the token please contact [Axiad Customer Success Representative](mailto:customer.success@axiad.com).
+   3.2. Configure `Authentication token` under `Additional Options` section as shown. If you don't have the token please contact [Axiad Customer Success Representative](mailto:customer.success@axiad.com).
   
    ![Authentication Token](./images/Authentication_token_config.png)
 
-   3. Click on save.
+   3.3. Click on save.
 
-### Axiad SCIM Connector mappings Configuration   
-1. Click `CONFIGURE` on the menu bar and select `Mappings`. Axiad SCIM mappings will be available as shown below
+### 2. Axiad SCIM Connector mappings Configuration   
+   Click `CONFIGURE` on the menu bar and select `Mappings`. Axiad SCIM mappings will be available as shown
   
    ![Axiad SCIM Mappings](./images/Axiad_SCIM_Mappings.png)
 
-#### Users mappings Configuration 
+#### _2.1. User mapping Configurations_
 
 1. Click on `Edit` where SOURCE is `Managed/User` and verify the settings are correct
-   1. Verify `Properties` tab has mappings as shown
+
+   1.1. Verify `Properties` tab has `Attributes Grid` as shown
   
       ![User_properties_tab](./images/users_mapping/User_properties_tab.png)
-   2. Verify `Association Rules` under Association tab has config as shown
+
+   1.2. Verify `Association` tab has `Association Rules` as shown
   
       ![User_association_tab](./images/users_mapping/User_association_tab.png)
-      1. Under `Association Rules`, click on pencil icon to verify the `Correlation Query` config as shown
+
+      1.2.1. Under `Association Rules` click on `pencil` icon (as highlighted in above image) to verify the `Correlation Query` config as shown
   
-         ![User_correlation_query](./images/users_mapping/User_correlation_query.png)
-   3. Verify `Behaviors` tab has policies as shown
+      ![User_correlation_query](./images/users_mapping/User_correlation_query.png)
+
+   1.3. Verify `Behaviors` tab has `Policies` as shown
   
       ![User_behaviors_tab](./images/users_mapping/User_behaviors_tab.png)
-   4. Verify `Advanced` tab has policies as shown 
+
+   1.4. Verify `Advanced` tab has `Additional Mapping Options` as shown 
   
       ![User_advanced_tab](./images/users_mapping/User_advanced_tab.png)  
        
-2. Under `Scheduling` tab, you can `Add Reconciliation Schedule` as per your organization's requirement.
+   1.5. Under `Scheduling` tab, you can `Add Reconciliation Schedule` as per your organization's requirement.
 
-#### Groups mappings Configuration
+#### _2.2. Group mapping Configurations_
 
 1. Click on `Edit` where SOURCE is `Managed/Role` and verify the settings are correct
-   1. Verify `Properties` tab has mappings as shown
+
+   1.1. Verify `Properties` tab has `Attributes Grid` as shown
   
       ![User_properties_tab](./images/groups_mapping/Group_properties_tab.png)
-   2. Verify `Association Rules` under Association tab has config as shown
+
+   1.2. Verify `Association` tab has `Association Rules` as shown
   
       ![User_association_tab](./images/groups_mapping/Group_association_tab.png)
-      1. Under `Association Rules`, click on pencil icon to verify the `Correlation Query` config as shown
+
+      1.2.1. Under `Association Rules` click on `pencil` icon (as highlighted in above image) to verify the `Correlation Query` config as shown
   
-         ![User_correlation_query](./images/groups_mapping/Group_correlation_query.png)
-   3. Verify `Behaviors` tab has policies as shown
+      ![User_correlation_query](./images/groups_mapping/Group_correlation_query.png)
+
+   1.3. Verify `Behaviors` tab has `Policies` as shown
   
       ![User_behaviors_tab](./images/groups_mapping/Group_behaviors_tab.png)
-   4. Verify `Advanced` tab has policies as shown 
+
+   1.4. Verify `Advanced` tab has `Additional Mapping Options` as shown 
   
       ![User_advanced_tab](./images/groups_mapping/Group_advanced_tab.png)  
        
-2. Under `Scheduling` tab, you can `Add Reconciliation Schedule` as per your organization's requirement.
+   1.5. Under `Scheduling` tab, you can `Add Reconciliation Schedule` as per your organization's requirement. 
 
-### Managed Objects Configuration
+### _2.3. Managed Objects Configuration_
 
-#### **Users**
+#### 1. Users
+
 1. Click `CONFIGURE` on the menu bar and select `MANAGED OBJECTS`.
 2. Click 'User' managed object
 
-##### Manager property
+##### 1.1. Manager property
 
 1. Edit `manager` property 
 2. Under `Details`, click on `Show advanced options`
@@ -107,20 +121,22 @@ If your Axiad environment is already configured with required mappings in Axiad 
 
     ![Manager_edit_relationship](./images/users_mapping/Manager_edit_relationship.png)
 
-   1. Enable `Notify` on `Edit Resource` screen as shown
+   4.1. Enable `Notify` on `Edit Resource` screen as shown
 
       ![Edit_resource](./images/users_mapping/Edit_resource.png)
 
-##### MemberOfOrgIDs property
+##### 1.2. MemberOfOrgIDs property
+
 1. Edit `memberOfOrgIDs` property
 2. Under `Details`, click on `Show advanced options`
 3. Enable `User Editable`, `Return by Default` and `Virtual` options
 
-#### Roles
+#### 2. Roles
+
 1. Click `CONFIGURE` on the menu bar and select `MANAGED OBJECTS`.
 2. Click 'Role' managed object
 
-##### Members property
+##### 2.1. Members property
 
 1. Edit `members` property 
 2. Under `Details`, click on `Show advanced options`
@@ -129,6 +145,6 @@ If your Axiad environment is already configured with required mappings in Axiad 
 
     ![Member_edit_relationship](./images/groups_mapping/Member_edit_relationship.png)
 
-   1. Enable `Notify` on `Edit Resource` screen as shown
+   4.1. Enable `Notify` on `Edit Resource` screen as shown
 
       ![Edit_resource](./images/groups_mapping/Edit_resource.png)
