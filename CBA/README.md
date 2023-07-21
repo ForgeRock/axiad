@@ -67,7 +67,7 @@ If your Axiad environment is already issuing certificates there is no additional
 
    6.5. Add `LDAP Server Where Certificates are Stored`
 
-    ![LDAP_Server_Where_Certificates_are_Stored](images/certificate_validation_node/ldap_server_Where_certificates_are_stored.png)
+    ![LDAP_Server_Where_Certificates_are_Stored](images/certificate_validation_node/ldap_server_where_certificates_are_stored.png)
 
    6.6. Configure the `LDAP Server Authentication Password`
 
