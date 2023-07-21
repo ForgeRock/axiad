@@ -45,37 +45,37 @@ If your Axiad environment is already issuing certificates there is no additional
 4. Click `Create Tree` and create a new Authentication Tree as shown in section <a href="#Example-Flow">_Example Flow_</a>
 5. Click `Certificate Collector Node` and configure the `Certificate Collection Method` as shown
 
-   ![Certification_collection_method](images/certificate_collector_node/Certification_collection_method.png)
+   ![Certification_collection_method](images/certificate_collector_node/certification_collection_method.png)
 
 6. Click `Certificate Validation Node` and configure below options
 
    6.1. Enable `Check Certificate Expiration` option
 
-     ![Check_Certificate_Expiration](images/certificate_validation_node/Check_Certificate_Expiration.png)
+     ![Check_Certificate_Expiration](images/certificate_validation_node/check_certificate_expiration.png)
    
    6.2. Enable `Match Certificate to CRL` option
 
-     ![Match_Certificate_to_CRL](images/certificate_validation_node/Match_Certificate_to_CRL.png)
+     ![Match_Certificate_to_CRL](images/certificate_validation_node/match_certificate_to_crl.png)
 
    6.3. Enable `Cache CRLs in Memory` option
 
-     ![Cache_CRLs_in_Memory](images/certificate_validation_node/Cache_CRLs_in_Memory.png)
+     ![Cache_CRLs_in_Memory](images/certificate_validation_node/cache_crls_in_memory.png)
 
    6.4. Enable `Update CA CRLs from CRLDistributionPoint` option
 
-    ![Update_CA_CRLs_from_CRLDistributionPoint](images/certificate_validation_node/Update_CA_CRLs_from_CRLDistributionPoint.png)
+    ![Update_CA_CRLs_from_CRLDistributionPoint](images/certificate_validation_node/update_ca_crls_from_crldistributionpoint.png)
 
    6.5. Add `LDAP Server Where Certificates are Stored`
 
-    ![LDAP_Server_Where_Certificates_are_Stored](images/certificate_validation_node/LDAP_Server_Where_Certificates_are_Stored.png)
+    ![LDAP_Server_Where_Certificates_are_Stored](images/certificate_validation_node/ldap_server_Where_certificates_are_stored.png)
 
    6.6. Configure `LDAP Server Authentication Password`
 
-    ![LDAP_Server_Password](images/certificate_validation_node/LDAP_Server_Password.png)
+    ![LDAP_Server_Password](images/certificate_validation_node/ldap_server_password.png)
 
    6.7. Enable `Use SSL/TLS for LDAP Access` option
 
-    ![Use SSL](images/certificate_validation_node/Use_SSL.png)
+    ![Use SSL](images/certificate_validation_node/use_ssl.png)
 
 5. Click `Certificate User Extractor Node` and configure `SubjectAltNameExt Value Type to Access User Profile` as shown
 

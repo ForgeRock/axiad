@@ -34,24 +34,24 @@ If your Axiad environment is already configured with the required mappings in Ax
 1. Log into the ForgeRock Identity Management console.
 2. Click `CONFIGURE` on the menu bar and select `CONNECTORS`. AxiadSCIMConnector will be avaiable as shown
   
-   ![Axiad SCIM Connector |10x10](./images/Axiad_SCIM_Connector.png)
+   ![Axiad SCIM Connector |10x10](./images/axiad_scim_connector.png)
 
 3. Click on the `Axiad SCIM Connector`
 
    3.1. Configure the `SCIM Endpoint` under `Base Connector Details` section as shown. If you don't have the SCIM endpoint please contact [Axiad Customer Success Representative](mailto:customer.success@axiad.com).
   
-   ![SCIM Endpoint](./images/SCIM_endpoint_config.png)
+   ![SCIM Endpoint](./images/scim_endpoint_config.png)
 
    3.2. Configure `Authentication token` under `Additional Options` section as shown. If you don't have the token please contact [Axiad Customer Success Representative](mailto:customer.success@axiad.com).
   
-   ![Authentication Token](./images/Authentication_token_config.png)
+   ![Authentication Token](./images/authentication_token_config.png)
 
    3.3. Click on save.
 
 ### 2. Axiad SCIM Connector mappings Configuration   
    Click `CONFIGURE` on the menu bar and select `Mappings`. Axiad SCIM mappings will be available as shown
   
-   ![Axiad SCIM Mappings](./images/Axiad_SCIM_Mappings.png)
+   ![Axiad SCIM Mappings](./images/axiad_scim_mappings.png)
 
 #### _2.1. User mapping Configurations_
 
@@ -59,23 +59,23 @@ If your Axiad environment is already configured with the required mappings in Ax
 
    1.1. Verify `Properties` tab has `Attributes Grid` as shown
   
-      ![User_properties_tab](./images/users_mapping/User_properties_tab.png)
+      ![User_properties_tab](./images/users_mapping/user_properties_tab.png)
 
    1.2. Verify `Association` tab has `Association Rules` as shown
   
-      ![User_association_tab](./images/users_mapping/User_association_tab.png)
+      ![User_association_tab](./images/users_mapping/user_association_tab.png)
 
       1.2.1. Under `Association Rules` click on `pencil` icon (as highlighted in above image) to verify the `Correlation Query` config as shown
   
-      ![User_correlation_query](./images/users_mapping/User_correlation_query.png)
+      ![User_correlation_query](./images/users_mapping/user_correlation_query.png)
 
    1.3. Verify `Behaviors` tab has `Policies` as shown
   
-      ![User_behaviors_tab](./images/users_mapping/User_behaviors_tab.png)
+      ![User_behaviors_tab](./images/users_mapping/user_behaviors_tab.png)
 
    1.4. Verify `Advanced` tab has `Additional Mapping Options` as shown 
   
-      ![User_advanced_tab](./images/users_mapping/User_advanced_tab.png)  
+      ![User_advanced_tab](./images/users_mapping/user_advanced_tab.png)  
        
    1.5. Under `Scheduling` tab, you can `Add Reconciliation Schedule` as per your organization's requirement.
 
@@ -85,23 +85,23 @@ If your Axiad environment is already configured with the required mappings in Ax
 
    1.1. Verify `Properties` tab has `Attributes Grid` as shown
   
-      ![User_properties_tab](./images/groups_mapping/Group_properties_tab.png)
+      ![User_properties_tab](./images/groups_mapping/group_properties_tab.png)
 
    1.2. Verify `Association` tab has `Association Rules` as shown
   
-      ![User_association_tab](./images/groups_mapping/Group_association_tab.png)
+      ![User_association_tab](./images/groups_mapping/group_association_tab.png)
 
       1.2.1. Under `Association Rules` click on `pencil` icon (as highlighted in above image) to verify the `Correlation Query` config as shown
   
-      ![User_correlation_query](./images/groups_mapping/Group_correlation_query.png)
+      ![User_correlation_query](./images/groups_mapping/group_correlation_query.png)
 
    1.3. Verify `Behaviors` tab has `Policies` as shown
   
-      ![User_behaviors_tab](./images/groups_mapping/Group_behaviors_tab.png)
+      ![User_behaviors_tab](./images/groups_mapping/group_behaviors_tab.png)
 
    1.4. Verify `Advanced` tab has `Additional Mapping Options` as shown 
   
-      ![User_advanced_tab](./images/groups_mapping/Group_advanced_tab.png)  
+      ![User_advanced_tab](./images/groups_mapping/group_advanced_tab.png)  
        
    1.5. Under `Scheduling` tab, you can `Add Reconciliation Schedule` as per your organization's requirement. 
 
@@ -119,11 +119,11 @@ If your Axiad environment is already configured with the required mappings in Ax
 3. Enable all the options( `Viewable`, `Searchable`, `User Editable`, `Nullable`, `Return by Default` and `Notify Self`).
 4. Edit `Relationship Configuration`, highlighted with red rectangle as shown
 
-    ![Manager_edit_relationship](./images/users_mapping/Manager_edit_relationship.png)
+    ![Manager_edit_relationship](./images/users_mapping/manager_edit_relationship.png)
 
    4.1. Enable `Notify` on `Edit Resource` screen as shown
 
-      ![Edit_resource](./images/users_mapping/Edit_resource.png)
+      ![Edit_resource](./images/users_mapping/edit_resource.png)
 
 ##### 1.2. MemberOfOrgIDs property
 
@@ -143,8 +143,8 @@ If your Axiad environment is already configured with the required mappings in Ax
 3. Enable `Viewable`, `User Editable`, `Return by Default` and `Notify Self` options.
 4. Edit `Relationship Configuration`, highlighted with red rectangle as shown
 
-    ![Member_edit_relationship](./images/groups_mapping/Member_edit_relationship.png)
+    ![Member_edit_relationship](./images/groups_mapping/member_edit_relationship.png)
 
    4.1. Enable `Notify` on `Edit Resource` screen as shown
 
-      ![Edit_resource](./images/groups_mapping/Edit_resource.png)
+      ![Edit_resource](./images/groups_mapping/edit_resource.png)
