@@ -9,7 +9,7 @@ Please refer to our website for more information about [Axiad](https://www.axiad
 
 ## Axiad SCIM Connector
 
-Axiad SCIM Connector enable automatic provisioning of users and groups between Axiad Cloud and ForgeRock using secure and standard protocol, System for Cross-Domain Identity Managemen(SCIM). Axiad SCIM connector allows partners to levarge Certificate Based Authentication, which is the most secure, phishing-resistant forms of multi-factor authentication (MFA) and is increasingly deployed in enterprises and the public sector. Many enterprise employees, as well as the majority of federal agency and defense employees/contractors, use a strong authenticator such as a smart card or hardware device for authentication. CBA streamlines the process of authenticating users with a variety of authenticators while improving overall protection.
+Axiad SCIM Connector enable automatic provisioning of users and groups between Axiad Cloud and ForgeRock using secure and standard protocol System for Cross-Domain Identity Managemen(SCIM). Axiad SCIM connector allows partners to levarge Certificate Based Authentication, which is the most secure, phishing-resistant forms of multi-factor authentication (MFA) and is increasingly deployed in enterprises and the public sector. Many enterprise employees, as well as the majority of federal agency and defense employees/contractors, use a strong authenticator such as a smart card or hardware device for authentication. CBA streamlines the process of authenticating users with a variety of authenticators while improving overall protection.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ If your Axiad environment is already configured with required mappings in Axiad 
 
 ## ForgeRock Configuration
 
-### Axiad SCIM Connector Configuration
+### __Axiad SCIM Connector Configuration__
 1. Log into the ForgeRock Identity Management console.
 2. Click `CONFIGURE` on the menu bar and select `CONNECTORS`. AxiadSCIMConnector will be avaiable to configure as shown
   
@@ -94,7 +94,7 @@ If your Axiad environment is already configured with required mappings in Axiad 
 
 ### Managed Objects Configuration
 
-#### Users
+#### **Users**
 1. Click `CONFIGURE` on the menu bar and select `MANAGED OBJECTS`.
 2. Click 'User' managed object
 
