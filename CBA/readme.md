@@ -42,7 +42,7 @@ If your Axiad environment is already issuing certificates there is no additional
 1. Log into the ForgeRock AM console
 2. Select the appropriate `Realm`
 3. Click `Authentication Trees`
-4. Click `Create Tree` and create a new Authentication Tree as shown in <a href="#Example-Flow">_here_</a>
+4. Click `Create Tree` and create a new Authentication Tree as shown in section <a href="#Example-Flow">_Example Flow_</a>
 5. Click `Certificate Collector Node` and configure the `Certificate Collection Method` as shown
 
    ![Certification_collection_method](images/certificate_collector_node/Certification_collection_method.png)
