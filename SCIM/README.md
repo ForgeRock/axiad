@@ -1,4 +1,4 @@
-   <img src="images/axiad_logo.png" align="center">
+<img src="images/axiad_logo.png" align="center">
  
 
 # Axiad
@@ -31,25 +31,25 @@ If your Axiad Cloud tenant is already configured with the required mappings attr
 
 ### 1. Axiad SCIM Connector Configuration
 
-1. Log into the ForgeRock Identity Management console.
-2. Click `CONFIGURE` on the menu bar and select `CONNECTORS`. AxiadSCIMConnector will be avaiable as shown
+1. Log into the ForgeRock Identity Management console
+2. Click `CONFIGURE` on the menu bar and select `CONNECTORS`. AxiadSCIMConnector will be available as shown
   
    ![Axiad SCIM Connector |10x10](./images/axiad_scim_connector.png)
 
 3. Click on the `Axiad SCIM Connector`
 
-   3.1. Configure the `SCIM Endpoint` under `Base Connector Details` section as shown. If you don't have the SCIM endpoint please contact [Axiad Customer Success Representative](mailto:customer.success@axiad.com).
+   3.1. Configure the `SCIM Endpoint` under `Base Connector Details` section as shown. If you do not have the SCIM endpoint please contact [Axiad Customer Success](mailto:customer.success@axiad.com)
   
    ![SCIM Endpoint](./images/scim_endpoint_config.png)
 
-   3.2. Configure the `Authentication token` under the `Additional Options` section as shown. If you don't have the token please contact [Axiad Customer Success Representative](mailto:customer.success@axiad.com).
+   3.2. Configure the `Authentication token` under the `Additional Options` section as shown. If you do not have the token please contact [Axiad Customer Success](mailto:customer.success@axiad.com)
   
    ![Authentication Token](./images/authentication_token_config.png)
 
    3.3. Click on save.
 
 ### 2. Axiad SCIM Connector mappings Configuration   
-   Click `CONFIGURE` on the menu bar and select `Mappings`. Axiad SCIM mappings will be available as showna
+   Click `CONFIGURE` on the menu bar and select `Mappings`. Axiad SCIM mappings will be available as shown
   
    ![Axiad SCIM Mappings](./images/axiad_scim_mappings.png)
 
@@ -77,7 +77,7 @@ If your Axiad Cloud tenant is already configured with the required mappings attr
   
       ![User_advanced_tab](./images/users_mapping/user_advanced_tab.png)  
        
-   1.5. Under the `Scheduling` tab, you can `Add Reconciliation Schedule` as per your organization's requirements.
+   1.5. Under the `Scheduling` tab, you can `Add Reconciliation Schedule` as per your organization's requirements
 
 #### _2.2. Group mapping Configurations_
 
@@ -103,13 +103,13 @@ If your Axiad Cloud tenant is already configured with the required mappings attr
   
       ![User_advanced_tab](./images/groups_mapping/group_advanced_tab.png)  
        
-   1.5. Under the `Scheduling` tab, you can `Add Reconciliation Schedule` as per your organization's requirements. 
+   1.5. Under the `Scheduling` tab, you can `Add Reconciliation Schedule` as per your organization's requirements
 
 ### _2.3. Managed Objects Configuration_
 
 #### 1. Users
 
-1. Click `CONFIGURE` on the menu bar and select `MANAGED OBJECTS`.
+1. Click `CONFIGURE` on the menu bar and select `MANAGED OBJECTS`
 2. Click the 'User' managed object
 
 ##### 1.1. Manager property
@@ -138,7 +138,7 @@ If your Axiad Cloud tenant is already configured with the required mappings attr
 
 #### 2. Roles
 
-1. Click `CONFIGURE` on the menu bar and select `MANAGED OBJECTS`.
+1. Click `CONFIGURE` on the menu bar and select `MANAGED OBJECTS`
 2. Click the 'Role' managed object
 
 ##### 2.1. Members property
