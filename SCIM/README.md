@@ -116,7 +116,10 @@ If your Axiad environment is already configured with the required mappings in Ax
 
 1. Edit the `manager` property 
 2. Under `Details`, click on `Show advanced options`
-3. Enable all the options( `Viewable`, `Searchable`, `User Editable`, `Nullable`, `Return by Default` and `Notify Self`).
+3. Enable all the options( `Viewable`, `Searchable`, `User Editable`, `Nullable`, `Return by Default` and `Notify Self`) as shown
+
+   ![Manager_property_options](./images/users_mapping/manager_property_options.png)
+
 4. Edit the `Relationship Configuration`, highlighted with a red rectangle as shown
 
     ![Manager_edit_relationship](./images/users_mapping/manager_edit_relationship.png)
@@ -129,7 +132,9 @@ If your Axiad environment is already configured with the required mappings in Ax
 
 1. Edit the `memberOfOrgIDs` property
 2. Under `Details`, click on `Show advanced options`
-3. Enable `User Editable`, `Return by Default` and the `Virtual` options
+3. Enable `User Editable`, `Return by Default` and the `Virtual` options as shown
+
+    ![MemberOfOrgIDs_property_option](./images/users_mapping/memberOfOrgIDs_property_option.png)
 
 #### 2. Roles
 
@@ -140,7 +145,10 @@ If your Axiad environment is already configured with the required mappings in Ax
 
 1. Edit the `members` property 
 2. Under `Details`, click on `Show advanced options`
-3. Enable `Viewable`, `User Editable`, `Return by Default` and the `Notify Self` options.
+3. Enable `Viewable`, `User Editable`, `Return by Default` and the `Notify Self` options as shown
+
+   ![Members_property_options](./images/groups_mapping/members_property_options.png)
+ 
 4. Edit the `Relationship Configuration`, highlighted with a red rectangle as shown
 
     ![Member_edit_relationship](./images/groups_mapping/member_edit_relationship.png)
