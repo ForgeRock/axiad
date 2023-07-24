@@ -9,21 +9,21 @@ Please refer to our website for more information about [Axiad](https://www.axiad
 
 ## Axiad SCIM Connector
 
-Axiad SCIM Connector enables automatic provisioning of users and groups between Axiad Cloud and ForgeRock using the secure and standard protocol, System for Cross-Domain Identity Management(SCIM). The Axiad SCIM connector allows partners to levarge Certificate Based Authentication, which is the most secure, phishing-resistant form of multi-factor authentication (MFA) and is being increasingly deployed in enterprises as well as the public sector. Many enterprise employees, as well as the majority of federal agencies and defense employees/contractors, use a strong authenticator such as a smart card or hardware device for authentication. CBA streamlines the process of authenticating users with a variety of authenticators while improving overall protection.
+Axiad SCIM Connector enables automatic provisioning of users and groups between Axiad Cloud and ForgeRock using the secure and standard protocol, System for Cross-Domain Identity Management(SCIM). The Axiad SCIM connector allows partners to leverage certificate based authentication, which is the most secure, phishing-resistant form of multi-factor authentication (MFA) and is being increasingly deployed in enterprises as well as the public sector. Many enterprise employees, as well as the majority of federal agencies and defense employees/contractors, use a strong authenticator such as a smart card or hardware device for authentication. CBA streamlines the process of authenticating users with a variety of authenticators while improving overall protection.
 
 ## Prerequisites
 
 1. ForgeRock Identity Management (openidm)
-1. Axiad Cloud tenant or Axiad Unified Credential Management System (UCMS)
+1. Axiad Cloud tenant
 1. Appropriate Axiad SCIM connector configuration files
 
 ## Axiad Configuration
 
-If your Axiad environment is already configured with the required mappings in Axiad Unified Credential Management System (UCMS) there is no additional configuration needed. If assistance is needed with your Axiad environment in the following sections please contact [Axiad Customer Success](mailto:customer.success@axiad.com).
+If your Axiad Cloud tenant is already configured with the required mappings attribute there is no additional Axiad configuration needed. If assistance is needed with your Axiad Cloud environment in the following sections please contact [Axiad Customer Success](mailto:customer.success@axiad.com).
 
 ## Configuring the Axiad SCIM Connector
 
-1. Get the latest SCIM Connector configuration and mapping file from the [Axiad Customer Success Representative](mailto:customer.success@axiad.com).
+1. Get the latest SCIM Connector configuration and mapping file from the [Axiad Customer Success](mailto:customer.success@axiad.com) team.
 2. Copy the `provisioner.openicf-AxiadSCIMConnector.json` file into the `conf` directory where ForgeRock Identity Management is deployed.
 3. Copy the contents of `mapping-AxiadSCIMConnector.json` into the mappings array inside the `conf\sync.json` file.
 
@@ -49,7 +49,7 @@ If your Axiad environment is already configured with the required mappings in Ax
    3.3. Click on save.
 
 ### 2. Axiad SCIM Connector mappings Configuration   
-   Click `CONFIGURE` on the menu bar and select `Mappings`. Axiad SCIM mappings will be available as shown
+   Click `CONFIGURE` on the menu bar and select `Mappings`. Axiad SCIM mappings will be available as showna
   
    ![Axiad SCIM Mappings](./images/axiad_scim_mappings.png)
 
