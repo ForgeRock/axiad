@@ -11,10 +11,18 @@ Please refer to our website for more information about [Axiad](https://www.axiad
 
 Axiad SCIM Connector enables automatic provisioning of users and groups between Axiad Cloud and ForgeRock using the secure and standard protocol, System for Cross-Domain Identity Management(SCIM). The Axiad SCIM connector allows partners to leverage certificate based authentication, which is the most secure, phishing-resistant form of multi-factor authentication (MFA) and is being increasingly deployed in enterprises as well as the public sector. Many enterprise employees, as well as the majority of federal agencies and defense employees/contractors, use a strong authenticator such as a smart card or hardware device for authentication. CBA streamlines the process of authenticating users with a variety of authenticators while improving overall protection.
 
+Axiad provides this SCIM Connector as a starting point for integrating ForgeRock and Axiad Cloud. Since every ForgeRock implementation is different we have provided a basic mapping of ForgeRock attributes for SCIM provisioning. Your organization's implementation may have differences which will require updates to ensure the SCIM Connector works properly.
+
+Your Axiad SCIM Connector may also not require all the attributes that are described below or your ForgeRock implementation may not have all the data populated for all attributes listed. The SCIM attribute mapping will need to be updated as appropriate for your data and business requirements. 
+
+Please work with [Axiad Customer Success](mailto:customer.success@axiad.com) before implementing a SCIM connector as they will need to provide an attribute list and credentials for your Axiad Cloud tenant.
+
 ## Prerequisites
 
-1. ForgeRock Identity Management (openidm)
+1. ForgeRock Identity Management (OpenIDM)
 1. Axiad Cloud tenant
+1. Axiad Cloud tenant available attribute list
+1. Axiad Cloud tenant SCIM credentials
 1. Appropriate Axiad SCIM connector configuration files
 
 ## Axiad Configuration
@@ -55,7 +63,7 @@ If your Axiad Cloud tenant is already configured with the required mappings attr
 
 #### _2.1. User mapping Configurations_
 
-1. Click on `Edit` where SOURCE is `Managed/User` and verify the settings are correct
+1. Click on `Edit` where SOURCE is `Managed/User` and verify the settings are correct. You should have received a list of supported SCIM attributes from the Axiad Customer Success team. The attribute list Axiad provides includes all attributes mapped within your Axiad Cloud tenant. You must delete all unused attributes from the SCIM mapping to avoid unnecessary data synchronizations.
 
    1.1. Verify the `Properties` tab has the `Attributes Grid` as shown
   
