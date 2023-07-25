@@ -33,7 +33,7 @@ If your Axiad Cloud tenant is already configured with the required mappings attr
 
 1. Get the latest SCIM Connector configuration and mapping file from the [Axiad Customer Success](mailto:customer.success@axiad.com) team.
 2. Copy the `provisioner.openicf-AxiadSCIMConnector.json` file into the `conf` directory where ForgeRock Identity Management is deployed.
-3. Copy the contents of `mapping-AxiadSCIMConnector.json` into the mappings array inside the `conf\sync.json` file.
+3. If the `sync.json` file exist into `conf` directory, copy the contents of `mapping-AxiadSCIMConnector.json` in the mappings array inside the `conf\sync.json` file. If the `sync.json` file doesn't exist, copy the sync.json file in the `conf` directory.
 
 ## ForgeRock Configuration
 
@@ -68,6 +68,8 @@ If your Axiad Cloud tenant is already configured with the required mappings attr
    1.1. Verify the `Properties` tab has the `Attributes Grid` as shown
   
       ![User_properties_tab](./images/users_mapping/user_properties_tab.png)
+
+   **_Note_** : By default the `Organization` property is mapping to the 1st organization in an array. If this is different than what you expect please change the mapping accordingly.
 
    1.2. Verify the `Association` tab has the `Association Rules` as shown
   
@@ -164,3 +166,9 @@ If your Axiad Cloud tenant is already configured with the required mappings attr
    4.1. Enable `Notify` on the `Edit Resource` screen as shown
 
       ![Edit_resource](./images/groups_mapping/edit_resource.png)
+
+## Post configuration steps
+
+1. Test `User` provisioning by creating a user in ForgeRock and making sure it is provisioned in the Axiad Cloud and all the mappings are working as expected.
+2. Test `Role` provisioning by creating a role in ForgeRock and making sure it is provisioned in the Axiad Cloud and all the mappings are working as expected.
+
