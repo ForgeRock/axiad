@@ -126,7 +126,7 @@ If your Axiad Cloud tenant is already configured with the required mappings attr
 
 1. Edit the `manager` property 
 2. Under `Details`, click on `Show advanced options`
-3. Enable all the options( `Viewable`, `Searchable`, `User Editable`, `Nullable`, `Return by Default` and `Notify Self`) as shown
+3. Enable `Viewable`, `User Editable`, `Return by Default` and the `Notify Self` options as shown
 
    ![Manager_property_options](./images/users_mapping/manager_property_options.png)
 
