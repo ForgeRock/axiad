@@ -19,7 +19,7 @@ Please work with [Axiad Customer Success](mailto:customer.success@axiad.com) bef
 
 ## Prerequisites
 
-1. ForgeRock Identity Management (OpenIDM)
+1. ForgeRock Identity Management (OpenIDM) 7.3.0 or above
 1. Axiad Cloud tenant
 1. Axiad Cloud tenant available attribute list
 1. Axiad Cloud tenant SCIM credentials
