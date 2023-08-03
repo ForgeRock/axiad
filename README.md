@@ -82,7 +82,7 @@ If your Axiad environment is already issuing certificates there is no additional
     ![certificate_user_extractor_node](images/certificate_user_extractor_node/certificate_collection_method.png)
    
 6. Click `save`
-7. 
+   
 ## Example Flow
 
  ![Certificate_Flow](./images/certificate_flow.png)
