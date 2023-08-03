@@ -80,7 +80,9 @@ If your Axiad environment is already issuing certificates there is no additional
 5. Click the `Certificate User Extractor Node` and configure the `SubjectAltNameExt Value Type to Access User Profile` as shown
 
     ![certificate_user_extractor_node](images/certificate_user_extractor_node/certificate_collection_method.png)
-
+   
+6. Click `save`
+7. 
 ## Example Flow
 
  ![Certificate_Flow](./images/certificate_flow.png)
