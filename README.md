@@ -24,18 +24,13 @@ If your Axiad environment is already issuing certificates there is no additional
 
 ## Installing the Example Authentication Node
 
-1. Download the latest version of Axiad's certificate-based authentication example node [here](https://github.com/ForgeRock/axiad/tree/main/CBA/jar/).
-2. Copy the .jar file into the `../web-container/webapps/openam/WEB-INF/lib` directory where ForgeRock AM is deployed
-3. Enable Secure HTTP on the container
-4. Enable `com.sun.security.enableCRLDP` option in your web application container. For example, if you are using Apache Tomcat™, you would add the following to the `setenv.sh` file (typically located in the `/tomcat/bin/` directory):
+1. Enable Secure HTTP on the container
+2. Enable `com.sun.security.enableCRLDP` option in your web application container. For example, if you are using Apache Tomcat™, you would add the following to the `setenv.sh` file (typically located in the `/tomcat/bin/` directory):
     ```
     export CATALINA_OPTS="-Dcom.sun.security.enableCRLDP=true"
     ```
-5. Make sure the web application container in which AM is deployed handles user certificates correctly. For example, for Tomcat, you should set clientAuth to "want" in the server.xml file
-6. Install the Axiad root CA certificate and any issuing CA certificates into the system's truststore. By default, Tomcat uses the Java truststore provided with the JDK that is in `$JAVA_HOME/jre/lib/security/cacerts`. If you do not have the Axiad root and issuing CA certificates, please contact [Axiad Customer Success](mailto:customer.success@axiad.com) for assistance
-7. Restart the web container. The new node will then appear in the `Authentication Trees` components palette as shown
-
-    ![Component Palette](images/component_palette.png)
+3. Make sure the web application container in which AM is deployed handles user certificates correctly. For example, for Tomcat, you should set clientAuth to "want" in the server.xml file
+4. Install the Axiad root CA certificate and any issuing CA certificates into the system's truststore. By default, Tomcat uses the Java truststore provided with the JDK that is in `$JAVA_HOME/jre/lib/security/cacerts`. If you do not have the Axiad root and issuing CA certificates, please contact [Axiad Customer Success](mailto:customer.success@axiad.com) for assistance
 
 ## ForgeRock Configuration
 
